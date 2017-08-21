@@ -1,0 +1,14 @@
+program fontBrowser;
+
+uses
+  Forms,
+  UMMain in 'UMMain.pas' {frmFontBrowser};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.Title := 'Keima''s System Font Browser';
+  Application.CreateForm(TfrmFontBrowser, frmFontBrowser);
+  Application.Run;
+end.
